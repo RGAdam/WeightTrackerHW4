@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <title>Weight Tracker</title>
   </head>
-  <body>
-    <header>
-      <h1>Weight Tracker</h1>
+  <body class="body">
+    <header class="body__header">
+      <h1 class="body__header__h1">Weight Tracker</h1>
     </header>
-    <main>
-      <form action="">
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date" />
+    <main class="body__main">
+      <form class="body__main__form" action="">
+        <label class="body__main__form__date-label" for="date-input"
+          >Date</label
+        >
+        <input type="date" id="date-input" name="date" />
 
-        <label for="weight">Weight</label>
-        <input type="number" id="weight" step="0.1" />
+        <label class="body__main__form__weight-label" for="weight-input"
+          >Weight</label
+        >
+        <input type="number" id="weight-input" step="0.1" />
 
         <button type="button">Add</button>
       </form>
 
-      <div>
-        <h2>History</h2>
+      <div class="body__main__history-div">
+        <h2 class="body__main__history-div__h2">History</h2>
 
-        <div>
-          <table>
+        <div class="body__main__history-div__history-table-div">
+          <table
+            class="body__main__history-div__history-table-div__history-table"
+          >
             <tr>
               <td>58.3 kg</td>
               <td>yesterday at 19:43</td>
@@ -40,34 +46,34 @@
         </div>
       </div>
 
-      <div>
-        <h2>Statistics</h2>
+      <div class="body__main__statistics-div">
+        <h2 class="body__main__statistics-div__h2">Statistics</h2>
 
-        <div>
+        <div class="body__main__statistics-div__buttons-div">
           <button type="button">Week</button>
           <button type="button">Month</button>
           <button type="button">Year</button>
           <button type="button">Lifetime</button>
+        </div>
 
-          <div>
-            <!--<canvas></canvas>-->
-            <img src="placeboGraph.png" alt="" />
-          </div>
+        <div class="body__main__statistics-div__graph-div">
+          <!--<canvas></canvas>-->
+          <img src="placeboGraph.png" alt="" />
+        </div>
 
-          <div>
-            <p>58.3 kg</p>
-            <p>Current weight</p>
-          </div>
+        <div class="body__main__statistics-div__current-weight-div">
+          <p>58.3 kg</p>
+          <p>Current weight</p>
+        </div>
 
-          <div>
-            <p>50.8 kg</p>
-            <p>Weight at the start of the period</p>
-          </div>
+        <div class="body__main__statistics-div__starting-weight-div">
+          <p>50.8 kg</p>
+          <p>Weight at the start of the period</p>
+        </div>
 
-          <div>
-            <p>-7.5 kg</p>
-            <p>Progress</p>
-          </div>
+        <div class="body__main__statistics-div__progress-div">
+          <p>-7.5 kg</p>
+          <p>Progress</p>
         </div>
       </div>
     </main>
