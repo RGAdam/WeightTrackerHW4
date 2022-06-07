@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weight Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weight Tracker</h1>
+    </header>
+    <main>
+      <form action="">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" step="0.1" />
+
+        <button type="button">Add</button>
+      </form>
+
+      <div>
+        <h2>History</h2>
+
+        <div>
+          <table>
+            <tr>
+              <td>58.3 kg</td>
+              <td>yesterday at 19:43</td>
+            </tr>
+            <tr>
+              <td>58.3 kg</td>
+              <td>05 Mar az 19:10</td>
+            </tr>
+            <tr>
+              <td>58.3 kg</td>
+              <td>03 Jan 2019 at 19:10</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2>Statistics</h2>
+
+        <div>
+          <button type="button">Week</button>
+          <button type="button">Month</button>
+          <button type="button">Year</button>
+          <button type="button">Lifetime</button>
+
+          <div>
+            <!--<canvas></canvas>-->
+            <img src="placeboGraph.png" alt="" />
+          </div>
+
+          <div>
+            <p>58.3 kg</p>
+            <p>Current weight</p>
+          </div>
+
+          <div>
+            <p>50.8 kg</p>
+            <p>Weight at the start of the period</p>
+          </div>
+
+          <div>
+            <p>-7.5 kg</p>
+            <p>Progress</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
