@@ -95,6 +95,35 @@ function addNewWeight(_date: string, _weight: number) {
   currentWeightP.innerText = newStatistic.weight + " kg";
 }
 
+function fillHistoryTable() {
+  let output: string = "";
+
+  for (let i = 0; i < statistics.length; i++) {
+    let tempDate = new Date(statistics[i].date);
+
+    output += `<tr>
+                <td>${statistics[i].weight} kg</td>`;
+
+    if (new Date().getFullYear() - tempDate.getFullYear()) {
+      output += `<td class="right">${padTo2Digits(tempDate.getDay())} ${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()} at ${getTime()}</td>`;
+    } else if (tempDate.getDate() === new Date().getDate()) {
+      output += `<td class="right">today at ${getTime()}</td>`;
+    } else if (tempDate.getDate() === new Date().getDate() - 1) {
+      output += `<td class="right">yesterday at ${getTime()}</td>`;
+    } else if (tempDate.getDate() <= new Date().getDate() - 2) {
+      output += `<td class="right">${padTo2Digits(tempDate.getDay())} ${monthNames[tempDate.getMonth()]} at ${tempDate.getHours()}:${tempDate.getMinutes()}</td>`;
+    }
+
+    output += `</tr>`;
+
+    if (i === 9) {
+      break;
+    }
+  }
+
+  historyTable.innerHTML = output;
+}
+
 function getDataFromInterface(data: any) {
   let array: any[] = [];
 

@@ -1,0 +1,23 @@
+{
+  "name": "weighttrackerhw4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ts/app.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGAdam/WeightTrackerHW4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGAdam/WeightTrackerHW4/issues"
+  },
+  "homepage": "https://github.com/RGAdam/WeightTrackerHW4#readme",
+  "dependencies": {
+    "apexcharts": "^3.35.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40"
+  }
+}
