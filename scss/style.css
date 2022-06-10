@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body__body-wrapper__header__h1 {
+  margin: 20px 0;
+}
+.body__body-wrapper__form {
+  display: flex;
+  align-items: center;
+}
+.body__body-wrapper__form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.body__body-wrapper__form__input-wrapper input {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.body__body-wrapper__form__add-button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+.body__body-wrapper__form__add-button:hover {
+  background: #e6e6e6;
+}
+.body__body-wrapper__form__add-button:active {
+  background: #b3b3b3;
+}
+.body__body-wrapper__history-div__h2 {
+  margin: 10px 0;
+}
+.body__body-wrapper__history-div__history-table-div__history-table {
+  border: 1px solid black;
+  width: 100%;
+}
+.body__body-wrapper__history-div__history-table-div .right {
+  float: right;
+}
+.body__body-wrapper__statistics-div__h2 {
+  margin: 10px 0;
+}
+.body__body-wrapper__statistics-div__buttons-div {
+  display: flex;
+  margin: 10px 0;
+}
+.body__body-wrapper__statistics-div__buttons-div button {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+.body__body-wrapper__statistics-div__buttons-div button:hover {
+  background: #e6e6e6;
+}
+.body__body-wrapper__statistics-div__buttons-div button:active {
+  background: #b3b3b3;
+}
+.body__body-wrapper__statistics-div .stats-wrapper {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.body__body-wrapper__statistics-div__current-weight-div, .body__body-wrapper__statistics-div__starting-weight-div, .body__body-wrapper__statistics-div__progress-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 215px;
+  height: 100px;
+  border: 1px solid black;
+}
+.body__body-wrapper__statistics-div__current-weight-div__current-weight-number, .body__body-wrapper__statistics-div__current-weight-div__starting-weight-number, .body__body-wrapper__statistics-div__current-weight-div__progress-number, .body__body-wrapper__statistics-div__starting-weight-div__current-weight-number, .body__body-wrapper__statistics-div__starting-weight-div__starting-weight-number, .body__body-wrapper__statistics-div__starting-weight-div__progress-number, .body__body-wrapper__statistics-div__progress-div__current-weight-number, .body__body-wrapper__statistics-div__progress-div__starting-weight-number, .body__body-wrapper__statistics-div__progress-div__progress-number {
+  font-size: 40px;
+}
+.body__body-wrapper__statistics-div__progress-div {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
